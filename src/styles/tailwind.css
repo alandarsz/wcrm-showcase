@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* For Material Icons */
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+/* For Material Symbols */
+
+/** Global base style **/
+@layer base {
+  * {
+    word-break: break-word !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  :root {
+    --safe-top: env(safe-area-inset-top);
+  }
+
+  .header {
+    padding-top: var(--safe-top);
+    height: calc(60px + var(--safe-top));
+  }
+
+  .content {
+    padding-top: calc(60px + var(--safe-top));
+  }
+}
+
+@layer components {
+  .box1 {
+    @apply p-5 border rounded mb-5;
+  }
+  .split2 {
+    @apply grid grid-cols-1 lg:grid-cols-2 space-x-0 space-y-0 lg:space-x-5 border-b border-dashed py-1;
+  }
+}

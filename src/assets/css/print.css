@@ -1,0 +1,112 @@
+.print-page {
+  display: none;
+}
+* {
+  word-break: break-all !important;
+}
+@media print {
+  .print-page {
+    display: block;
+  }
+  .header > div {
+    font-size: 12px;
+  }
+  .header #logo {
+    text-align: left;
+  }
+  .header #logo h1,
+  .header #title h1 {
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+
+  .body,
+  .tbl-header,
+  .tbl-body,
+  .tbr {
+    width: 100%;
+    font-size: 11px;
+  }
+
+  .tbl-header {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .tbl-header > div {
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 11px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .tbl-body .tbr {
+    display: block;
+  }
+  .tbl-body .tbr > div {
+    padding: 2px 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .header {
+    position: running(header);
+  }
+  .footer {
+    position: running(footer);
+  }
+  .print-btn {
+    position: running(top-right);
+  }
+
+  .text-right {
+    text-align: right !important;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+
+  .customer-title {
+    background: rgb(102, 179, 255);
+  }
+  .material-total {
+    background: rgb(180, 226, 254);
+    border-bottom: 4px solid white;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @page {
+    @top-center {
+      content: element(header);
+      margin-top: 15px;
+    }
+
+    @bottom-left {
+      font-size: 10px;
+      content: element(footer);
+      border-top: 1px solid black;
+      margin-bottom: 20px;
+    }
+    @bottom-center {
+      border-top: 1px solid black;
+    }
+    @bottom-right {
+      font-size: 10px;
+      content: 'Page ' counter(page) ' of ' counter(pages);
+      border-top: 1px solid black;
+      margin-bottom: 35px;
+    }
+  }
+}
+@page {
+  margin: 135px 15px 50px 15px;
+}
+.bg {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2c5364, #203a43, #0f2027); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

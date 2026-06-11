@@ -1,0 +1,61 @@
+{
+  "statusCode": 200,
+  "message": "Login berhasil",
+  "data": {
+    "successFlag": 1,
+    "message": "Login berhasil",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJVU0VSXzE3NDk5NzM4OTY5MTQiLCJ1c2VyX3VzZXJuYW1lIjoic3RhZmZfc2Fza2VoIiwidXNlcl9mdWxsbmFtZSI6eyJ1c2VyX2Z1bGxuYW1lX2ZpcnN0bmFtZSI6IkFudG8iLCJ1c2VyX2Z1bGxuYW1lX2xhc3RuYW1lIjoiV2lqYXlhIn0sInVzZXJfcm9sZSI6eyJ1c2VyX3JvbGVuYW1lIjoiQWRtaW5pc3RyYXRvciIsInVzZXJfcm9sZWNvZGUiOiJBRE1JTklTVFJBVE9SIn0sInVzZXJfcGhvbmVudW1iZXIiOiI2Mjg5NTMxMzExOTk5IiwidXNlcl9lbWFpbCI6ImFud2l5YTY5QGdtYWlsLmNvbSIsInVzZXJfY29tcGFueV9pZCI6IkRNQ01QMjUwNzA1IiwidXNlcl9jb21wYW55X2JyYW5jaF9pZCI6IkJSTkNIMDFETUMyNTA3MDUwMSIsInVzZXJfY29tcGFueV9icmFuZF9pZCI6IkJSTkQwMURNQ01QMjUwNzA1IiwiaWF0IjoxNzUyMjQ5NDA5LCJleHAiOjE3NTIzMzU4MDl9.GDVT7JY2n6JadzhzP9ryod6jkb77wLyph9x3uPcq6n8",
+    "user": {
+      "user_id": "USER_1749973896914",
+      "user_username": "staff_saskeh",
+      "user_fullname": {
+        "user_fullname_firstname": "Anto",
+        "user_fullname_lastname": "Wijaya"
+      },
+      "user_role": {
+        "user_rolename": "Administrator",
+        "user_rolecode": "ADMINISTRATOR"
+      },
+      "user_phonenumber": "6289531311999",
+      "user_email": "anwiya69@gmail.com",
+      "user_company_id": "DMCMP250705",
+      "user_company_branch_id": "BRNCH01DMC25070501",
+      "user_company_brand_id": "BRND01DMCMP250705"
+    },
+    "leftMenu": [
+      {
+        "_id": "6869373cda25d34387c55605",
+        "MENU_HEADER_CODE": "DASHBOARD",
+        "MENU_HEADER_NAME": "Dashboard",
+        "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-house-fill\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z\"/><path fill-rule=\"evenodd\" d=\"M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z\"/></svg>",
+        "MENU_HEADER_PATH": "dashboard",
+        "MENU_HEADER_HAS_CHILDREN": false
+      },
+      {
+        "_id": "6869373cda25d34387c55606",
+        "MENU_HEADER_CODE": "EXPORT",
+        "MENU_HEADER_NAME": "Export",
+        "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-cloud-arrow-down-fill\" viewBox=\"0 0 16 16\"><path d=\"M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708\"/></svg>",
+        "MENU_HEADER_PATH": "export",
+        "MENU_HEADER_HAS_CHILDREN": true,
+        "childrenMenu": [
+          {
+            "MENU_HEADER_CODE": "EXPORT",
+            "MENU_DETAIL_NAME": "Task",
+            "MENU_DETAIL_PICTURE": null,
+            "MENU_DETAIL_HAVE_DETAIL": false,
+            "MENU_DETAIL_PATH": "task"
+          },
+          {
+            "MENU_HEADER_CODE": "EXPORT",
+            "MENU_DETAIL_NAME": "Login",
+            "MENU_DETAIL_PICTURE": null,
+            "MENU_DETAIL_HAVE_DETAIL": false,
+            "MENU_DETAIL_PATH": "login"
+          }
+        ]
+      }
+    ]
+  },
+  "error": null
+}

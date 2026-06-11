@@ -1,0 +1,10 @@
+@import 'variables';
+
+:export {
+  fix: '';
+  primary: $primary;
+  primaryShade: $primaryShade;
+  primaryContrast: $primaryContrast;
+  secondary: $secondary;
+  textColor: $textColor;
+}

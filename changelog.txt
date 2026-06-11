@@ -1,0 +1,64 @@
+1.0.13 (09.06.26) :
+- update surat penawaran sewa armada ftl dan lepas kunci
+- sort table follow up
+- menu baru di report ( performance sales omset dan akuisisi ) dan grafik nya di dashboard
+- perbaikan query live location summary detail dashboard
+
+1.0.12 (02.06.26) :
+- perbaikan team page
+- penambahan filter by group untuk team page
+- penambahan sort by date untuk team page
+- penambahan sort untuk semua report
+- update report performance
+
+1.0.11 (19.04.26) :
+- pengajuan account id ke mobile ( by iframe)
+- menampilkan status approval dari mobile
+- dashboard TOP
+- menampilkan detail follow up di daftar lead kalau lead tersebut sudah follow up
+- menampilkan foto bukti dari status sebelumnya
+
+1.0.10 (09.04.26):
+- Fix Filter Sales
+
+1.0.9 (02.04.26) :
+- Input TOP Lead Dan Follow up
+- Otomisasi Sewa Armada
+
+1.0.8 (12.03.26) :
+- Input harga publish
+- Otomisasi proposal harga
+- otomisasi closing
+
+1.0.7 (09.03.26) :
+- perbaikan dan penambahan kolom meeting offline/online di task
+
+1.0.6 (06.03.26) :
+- penambahan fungsi reset filter sales di (lead, follow up, live location overview)
+- perbaikan format jabatan di surat penawaran harga pengiriman
+
+1.0.5 (05.03.26) :
+- download surat penawaran harga
+
+1.0.4 (04.03.26) : 
+- perubahan inputan prediksi omset ke format rupiah
+- penambahan inputan upload file ke foto selfie
+- perbaikan teampage setelah insert -> hit ulang api pagination
+
+1.0.3 (27.02.26) :
+- perubahan versi di page login
+- limit offset di lead
+
+1.0.2 (13.01.26) : 
+- perbaikan di task page
+- hapus console log yang mengganggu
+- improvement insert team anggota
+
+1.0.1 (09.01.26) : 
+- perbaikan menu check
+- perbaikan logout
+
+1.0.0 (09.01.26) :
+- perbaikan step login
+- perbaikan pagination
+- perbaikan detail live location

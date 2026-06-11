@@ -1,0 +1,13 @@
+
+{
+    "username": "staff_saskeh",
+    "firstname": "Anto",
+    "lastname": "Wijaya",
+    "role": {
+        "rolename": "Administrator",
+        "rolecode": "ADMINISTRATOR"
+    },
+    "password": "123456",
+    "phone": "6289531311999",
+    "email": "anwiya69@gmail.com"
+}

@@ -1,0 +1,543 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "KOL Management System API",
+    "description": "Development documentation",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "User",
+      "description": "User related endpoints"
+    },
+    {
+      "name": "KOL",
+      "description": "KOL related endpoints"
+    },
+    {
+      "name": "Rate Card",
+      "description": "Rate Card related endpoints"
+    },
+    {
+      "name": "KOL Analytics",
+      "description": "KOL Analytics related endpoints"
+    },
+    {
+      "name": "Campaign",
+      "description": "Campaign related endpoints"
+    },
+    {
+      "name": "Campaign History",
+      "description": "Campaign History related endpoints"
+    },
+    {
+      "name": "KOL Contents",
+      "description": "KOL Contents related endpoints"
+    },
+    {
+      "name": "Tracker",
+      "description": "Tracker related endpoints"
+    }
+  ],
+  "paths": {
+    "/api/v1/users/register": {
+      "post": {
+        "operationId": "postApiV1UsersRegister",
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/users/login": {
+      "post": {
+        "operationId": "postApiV1UsersLogin",
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/kols": {
+      "post": {
+        "operationId": "postApiV1Kols",
+        "responses": {
+          "200": {}
+        }
+      },
+      "get": {
+        "operationId": "getApiV1Kols",
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/kols/{id}": {
+      "get": {
+        "operationId": "getApiV1KolsById",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "put": {
+        "operationId": "putApiV1KolsById",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "delete": {
+        "operationId": "deleteApiV1KolsById",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/rate-cards-kols/{kolId}": {
+      "get": {
+        "operationId": "getApiV1Rate-cards-kolsByKolId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "kolId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "post": {
+        "operationId": "postApiV1Rate-cards-kolsByKolId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "kolId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/rate-cards/{rateCardId}": {
+      "get": {
+        "operationId": "getApiV1Rate-cardsByRateCardId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "rateCardId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "put": {
+        "operationId": "putApiV1Rate-cardsByRateCardId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "rateCardId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "delete": {
+        "operationId": "deleteApiV1Rate-cardsByRateCardId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "rateCardId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/analytics-kols/{kolId}": {
+      "post": {
+        "operationId": "postApiV1Analytics-kolsByKolId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "kolId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "get": {
+        "operationId": "getApiV1Analytics-kolsByKolId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "kolId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "put": {
+        "operationId": "putApiV1Analytics-kolsByKolId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "kolId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/campaigns": {
+      "post": {
+        "operationId": "postApiV1Campaigns",
+        "responses": {
+          "200": {}
+        }
+      },
+      "get": {
+        "operationId": "getApiV1Campaigns",
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/campaigns/{id}": {
+      "get": {
+        "operationId": "getApiV1CampaignsById",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "put": {
+        "operationId": "putApiV1CampaignsById",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "delete": {
+        "operationId": "deleteApiV1CampaignsById",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/history-campaigns/{campaignId}": {
+      "post": {
+        "operationId": "postApiV1History-campaignsByCampaignId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "campaignId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "get": {
+        "operationId": "getApiV1History-campaignsByCampaignId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "campaignId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/campaign-history/{historyId}": {
+      "get": {
+        "operationId": "getApiV1Campaign-historyByHistoryId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "historyId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "put": {
+        "operationId": "putApiV1Campaign-historyByHistoryId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "historyId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "delete": {
+        "operationId": "deleteApiV1Campaign-historyByHistoryId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "historyId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/kol-contents/campaign-history/{historyId}": {
+      "post": {
+        "operationId": "postApiV1Kol-contentsCampaign-historyByHistoryId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "historyId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "get": {
+        "operationId": "getApiV1Kol-contentsCampaign-historyByHistoryId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "historyId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/kol-contents/{contentId}": {
+      "get": {
+        "operationId": "getApiV1Kol-contentsByContentId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "contentId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "put": {
+        "operationId": "putApiV1Kol-contentsByContentId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "contentId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "delete": {
+        "operationId": "deleteApiV1Kol-contentsByContentId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "contentId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    },
+    "/api/v1/tracker/kol-contents/{contentId}": {
+      "post": {
+        "operationId": "postApiV1TrackerKol-contentsByContentId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "contentId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "get": {
+        "operationId": "getApiV1TrackerKol-contentsByContentId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "contentId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "put": {
+        "operationId": "putApiV1TrackerKol-contentsByContentId",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "contentId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}

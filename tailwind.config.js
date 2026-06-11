@@ -1,30 +1,33 @@
-export default {
+module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
         primary: {
-          light: '#4d76e8',
-          DEFAULT: '#2951b2', // Wahana Blue
-          dark: '#19347d',
+          light: '#254fb5',
+          DEFAULT: '#254fb5',
+          dark: '#192a56',
         },
-        secondary: {
-          DEFAULT: '#ffd938', // Wahana Yellow
-        },
-        slate: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
-        }
       },
+    },
+    screens: {
+      xs: '375px',
+      // => @media (min-width: 320px) { ... }
+      sm: '414px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     },
   },
   plugins: [],
-}
+};

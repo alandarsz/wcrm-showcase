@@ -1,0 +1,89 @@
+@use './variables.scss' as *;
+/** Global custom with scss **/
+/** table **/
+.table-header {
+  background-color: #f3f4f6 !important;
+  font-weight: 600;
+  color: $dark;
+  border-color: #00000010 !important;
+}
+.table-fixed-icon {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  .el-icon {
+    cursor: pointer;
+  }
+}
+/** Element plus override with scss **/
+/** el-table **/
+.el-table .cell {
+  white-space: pre !important;
+  padding: 0 5px;
+}
+
+/** el-dialog **/
+.el-dialog__body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.el-table .el-table__cell {
+  padding: 6px 0;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+.el-input.is-disabled .el-input__inner {
+  color: #999999;
+}
+//https://github.com/vitejs/vite/issues/1279
+
+/** el-from **/
+.form-wrap {
+  // background-color: #E5E7EB;
+  border-radius: 5px;
+}
+.form-2-section {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 50px;
+}
+@media only screen and (max-width: 1279px) {
+  .form-2-section {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 5px;
+  }
+}
+
+//transition
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: all 0.5s ease-out;
+}
+
+.slide-down-enter-from {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.slide-down-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.el-select-dropdown__option-item {
+  font-size: 14px !important;
+}
+
+.el-select-v2__wrapper.is-filterable {
+  cursor: pointer !important;
+}
+
+.el-popover.el-popper {
+  max-width: 200px;
+}
+
+.el-select-dropdown__list {
+  max-width: 650px;
+}

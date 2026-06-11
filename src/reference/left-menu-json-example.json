@@ -1,0 +1,85 @@
+[
+  {
+    "MENU_HEADER_CODE": "DASHBOARD",
+    "MENU_HEADER_NAME": "Dashboard",
+    "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-house-fill\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z\"/><path fill-rule=\"evenodd\" d=\"M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z\"/></svg>",
+    "MENU_HEADER_PATH": "dashboard",
+    "MENU_HEADER_HAS_CHILDREN": false
+  },
+  {
+    "MENU_HEADER_CODE": "KOL",
+    "MENU_HEADER_NAME": "KOL",
+    "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-people-fill\" viewBox=\"0 0 16 16\"><path d=\"M13 7c1.105 0 2-.672 2-1.5S14.105 4 13 4s-2 .672-2 1.5.895 1.5 2 1.5zM3 7c1.105 0 2-.672 2-1.5S4.105 4 3 4 1 4.672 1 5.5 1.895 7 3 7zm10 1c-1.657 0-3 1.12-3 2.5V12h6v-1.5c0-1.38-1.343-2.5-3-2.5zM3 8C1.343 8 0 9.12 0 10.5V12h6v-1.5C6 9.12 4.657 8 3 8z\"/></svg>",
+    "MENU_HEADER_PATH": "kol",
+    "MENU_HEADER_HAS_CHILDREN": true,
+    "childrenMenu": [
+      {
+        "MENU_HEADER_CODE": "KOL",
+        "MENU_DETAIL_NAME": "KOL List",
+        "MENU_DETAIL_PICTURE": null,
+        "MENU_DETAIL_HAVE_DETAIL": false,
+        "MENU_DETAIL_PATH": "kol-list"
+      },
+      {
+        "MENU_HEADER_CODE": "KOL",
+        "MENU_DETAIL_NAME": "KOL Contents",
+        "MENU_DETAIL_PICTURE": null,
+        "MENU_DETAIL_HAVE_DETAIL": false,
+        "MENU_DETAIL_PATH": "kol-contents"
+      }
+    ]
+  },
+  {
+    "MENU_HEADER_CODE": "RATE_CARD",
+    "MENU_HEADER_NAME": "Rate Cards",
+    "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-currency-dollar\" viewBox=\"0 0 16 16\"><path d=\"M8.5 1a.5.5 0 0 1 .5.5V2h.5a.5.5 0 0 1 0 1H9v2h1.5a2.5 2.5 0 0 1 0 5H9v2h.5a.5.5 0 0 1 0 1H9v.5a.5.5 0 0 1-1 0V13h-.5a.5.5 0 0 1 0-1H8V10H6.5a2.5 2.5 0 0 1 0-5H8V3H7.5a.5.5 0 0 1 0-1H8v-.5a.5.5 0 0 1 .5-.5zM8 4H6.5a1.5 1.5 0 0 0 0 3H8V4zm1 4v3h1.5a1.5 1.5 0 0 0 0-3H9z\"/></svg>",
+    "MENU_HEADER_PATH": "rate-cards",
+    "MENU_HEADER_HAS_CHILDREN": false
+  },
+  {
+    "MENU_HEADER_CODE": "ANALYTICS",
+    "MENU_HEADER_NAME": "Analytics",
+    "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-bar-chart-fill\" viewBox=\"0 0 16 16\"><path d=\"M1 13h2V6H1v7zm4 0h2V1H5v12zm4 0h2V9H9v4zm4 0h2V4h-2v9z\"/></svg>",
+    "MENU_HEADER_PATH": "analytics",
+    "MENU_HEADER_HAS_CHILDREN": false
+  },
+  {
+    "MENU_HEADER_CODE": "CAMPAIGN",
+    "MENU_HEADER_NAME": "Campaign",
+    "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-megaphone-fill\" viewBox=\"0 0 16 16\"><path d=\"M9 4.586V2.5a.5.5 0 0 0-.707-.457L1.33 5H.5a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h.83l6.964 2.957A.5.5 0 0 0 9 14.5v-2.086l6.276 2.674A.5.5 0 0 0 16 14.676V1.324a.5.5 0 0 0-.724-.449L9 4.586z\"/></svg>",
+    "MENU_HEADER_PATH": "campaign",
+    "MENU_HEADER_HAS_CHILDREN": true,
+    "childrenMenu": [
+      {
+        "MENU_HEADER_CODE": "CAMPAIGN",
+        "MENU_DETAIL_NAME": "Campaign",
+        "MENU_DETAIL_PICTURE": null,
+        "MENU_DETAIL_HAVE_DETAIL": false,
+        "MENU_DETAIL_PATH": "campaign-list"
+      },
+      {
+        "MENU_HEADER_CODE": "CAMPAIGN",
+        "MENU_DETAIL_NAME": "History Campaign",
+        "MENU_DETAIL_PICTURE": null,
+        "MENU_DETAIL_HAVE_DETAIL": false,
+        "MENU_DETAIL_PATH": "history-campaign"
+      }
+    ]
+  },
+  {
+    "MENU_HEADER_CODE": "TRACKER",
+    "MENU_HEADER_NAME": "Tracker",
+    "MENU_HEADER_PICTURE": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-search\" viewBox=\"0 0 16 16\"><path d=\"M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z\"/></svg>",
+    "MENU_HEADER_PATH": "tracker",
+    "MENU_HEADER_HAS_CHILDREN": true,
+    "childrenMenu": [
+      {
+        "MENU_HEADER_CODE": "TRACKER",
+        "MENU_DETAIL_NAME": "KOL Contents",
+        "MENU_DETAIL_PICTURE": null,
+        "MENU_DETAIL_HAVE_DETAIL": false,
+        "MENU_DETAIL_PATH": "tracker-kol-contents"
+      }
+    ]
+  }
+]

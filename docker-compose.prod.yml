@@ -1,0 +1,7 @@
+version: "3"
+services:
+  wahana-crm-panel:
+    environment:
+      - NODE_ENV=production
+    container_name: wahana-crm-panel-container
+    image: wahana-crm-panel:latest #this is image name and tag name

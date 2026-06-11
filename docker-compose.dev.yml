@@ -1,0 +1,11 @@
+version: "3"
+services:
+  wahana-crm-panel:
+    build:
+      context: .
+      args:
+        NODE_ENV: development
+    environment:
+      - NODE_ENV=development
+    container_name: dev-wahana-crm-panel-container
+    image: dev-wahana-crm-panel:latest #this is image name and tag name
