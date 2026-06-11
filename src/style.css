@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-light: #4d76e8;
+  --color-primary: #2951b2; /* Wahana Blue */
+  --color-primary-dark: #19347d;
+  --color-secondary: #ffd938; /* Wahana Yellow */
+  
+  --font-heading: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Glassmorphism styling for cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark-glass-panel {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+/* Smooth transitions */
+.transition-all-300 {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom styles to override Element Plus default styles if needed */
+.el-table {
+  --el-table-header-bg-color: #f1f5f9 !important;
+  --el-table-header-text-color: #1e293b !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.el-table th {
+  font-weight: 700 !important;
+}
+
+.el-dialog {
+  border-radius: 1rem !important;
+  overflow: hidden;
+}
+
+.el-tabs__item {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
